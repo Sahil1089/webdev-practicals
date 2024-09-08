@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: #1d1d1d27;
+        }
+        .container{
+          background-image:url("") ; 
+          background-color: #ffffff00;   
+          margin-bottom: 10vh;
+          text-transform: capitalize;
+          /* border: 1px solid black; */
+          padding: 3.9vw 3.9vw;
+          box-shadow: 5px 5px 10px rgba(204, 204, 204, 0.664);
+         
+        }
+        form{
+            background-color: #fdeed8f5;
+            width: 96%;
+            height: 95%; 
+            /* padding: 0 1vw; */
+            margin-left: 2.4vw;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39),-5px -5px 10px rgba(0, 0, 0, 0.384);
+
+        }
+        .span{
+            height: 4vh;
+            width: 100%;
+            background-color:rgba(240, 163, 48, 0.822);
+            justify-content: left;
+            align-items: center;
+        }
+        .span h2{
+           margin-left: 80px;
+           color: white;
+        }
+        .heading{
+            height: 15vh;
+            background-color: #fdf0ed;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            
+        }
+        .container legend{
+            font-size: 2.8vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color:black;
+        }
+        input{
+            width: 15vw;
+            height: 3.5vh;
+            border-radius: 4px;
+            border :none;
+            margin-left: 15px;
+        }
+       
+        label{
+            margin-left: 10px;
+        }
+        .font{
+            font-size: 2.1vw;
+            margin-top: 10px;
+            font-weight: 400;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        fieldset{
+            gap:10px;
+            background:transparent;
+            border: none;
+            margin-top: 4vh;
+              margin-left: 1vw;
+        }
+        .btns{
+            width: 60%;
+            height: 36vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            left: 16%;
+            top: 8%;
+            
+           
+        }
+        .btns button{
+            height: 7vh ;
+            width: 8vw;
+            border: none;
+            border-radius: 10px;
+            gap: 6vw;
+            text-transform: capitalize;
+            font: 1em sans-serif;
+            font-weight: 500;
+        }
+        legend{
+          
+        }
+        input:hover{
+            border: 2.2px solid orange;
+        }
+        .middle-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0 2vw;
+    padding-top: 20px;
+}
+.middle-nav h1{
+    color: #f65a29;
+   
+}
+
+.middle-nav .secondpart img{
+    height: 5vw;
+}
+.middle-nav .secondpart{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    
+}
+
+       
+    </style>
+   
+</head>
+<body>
+    <div class="container">
+        
+        <form action="" method="post">
+            <div class="heading">
+                <div class="middle-nav">
+                    <div class="firstpart ">
+                        <H1>RAMANUJAN COLLEGE</H1>
+                        <H4>UNIVERSITY OF DELHI</H4>
+                        <H3>NAAC Grade A++ with CGPA 3.71</H3>
+                    </div>
+                    <div class="secondpart  ">
+                        <img src="	https://ramanujancollege.ac.in/media/images/Azadi_Ka_Amrit_Mahotsav_English_logo.original.png" alt="">
+                        <img src="https://ramanujancollege.ac.in/media/images/Logo_RCDU_8oecNot.original.png" alt="">
+                        <img src="	https://ramanujancollege.ac.in/media/images/G20_India_2023_logo.original.png" alt="">
+                    </div>
+                    <div class="thirdpart">
+                       <h1>रामानुजन महाविद्यालय</h1> 
+                       <h4>दिल्ली विश्वविद्यालय</h4>
+                       <h3>सीजीपीए 3.71 . के साथ एनएएसी ग्रेड ए++</h3>
+            
+            
+            
+            
+                    </div>
+            
+                </div>
+
+            </div>
+            <div class="span">
+                <h2>Application form</h2>
+            </div>
+           
+            <fieldset><legend>personal info : </legend>
+            <label for="">Name</label>
+            <input type="text" placeholder="first name" value="first name">
+            <label for="middle name">middle name</label>
+            <input type="text" placeholder="middle name">
+            <label for="last name">last name</label>
+            <input type="text" placeholder="last name">
+        <br />
+
+        <br/>
+        <label for="gender">gender : </label>
+       <select name="gender" id="">
+        <option value="male">male</option>
+        <option value="female">female</option>
+
+        <option value="other">other</option>
+
+       </select>
+
+       <label for="dob">date of birth : </label>
+       <input type="date" name="dob" id="" placeholder="enter your dob">
+       <br/>
+
+        <br/>
+        <label for="mobile">mobile Number : </label>
+        <input type="tel" name="mobile" id="" >
+         <label for="">alternate number : </label>
+         <input type="tel" name="" id="">
+         <label for="">Email : </label>
+         <input type="email" name="email" id="">
+         <br/>
+
+         <br/>
+        <label for="father's name">father's name : </label>
+        <input type="text" placeholder="father's name">
+
+        <label for="mother's name">mother's name : </label>
+        <input type="text" placeholder="mother's name">
+
+        <br/>
+
+        <br/>
+        <label for="father's occupation">father's occupation  : </label>
+        <input type="text" placeholder="father's occupation">
+
+        <label for="mother's occupation">mother's occupation  : </label>
+        <input type="text" placeholder="mother's occupation">
+        <br/>
+        <br>
+        <label for="">Valid ID   : </label>
+        <select name="id" id="">
+            <option value="">Adhar card</option>
+            <option value="">Pan Card</option>
+            <option value="">Driving licence</option>
+            <option value="">Other</option>
+        </select>
+        <br/>
+
+        <br/>
+    </fieldset>
+
+    <fieldset>
+        <legend>Educational Qualification :</legend>
+        <label for="">class 10th </label><br/>  <br/>
+        <label for="">board  : </label>
+        <input type="text" placeholder="board name">
+        <label for="">marks  : </label>
+        <input type="text" placeholder="marks">
+        <label for=""> %/cgpa  : </label>
+        <input type="text">
+        
+        <label for="">marksheet</label>
+        <input type="file" name="" id="">
+        <br/>
+
+        <br/>
+        <label for="">class 12th</label><br/>  <br/>
+        <label for="">board</label>
+        <input type="text" placeholder="board name">
+        <label for="">marks</label>
+        <input type="text" placeholder="marks">
+        <label for="">%/cgpa</label>
+        <input type="text">
+        
+        <label for="">marksheet</label>
+        <input type="file" name="" id="">
+
+
+
+
+
+
+
+
+    </fieldset>
+
+    <fieldset>
+        <legend>address :</legend>
+        <label for="" class="font">Corresponding Address : </label><br/>
+        <br>
+        <label for="">city</label>
+        <input type="text">
+        <label for="">area</label>
+        <input type="text">
+        <label for="">street no. : </label>
+        <input type="text">
+        <br>
+        <br>
+        
+        <label for="">district</label>
+        <input type="text">
+        <label for="">pincode</label>
+        <input type="text">
+        <label for="">state</label>
+        <input type="text">
+        <br>
+        <br>
+        <br>
+        <label for="" class="font">permanent Address : </label><br/>
+        <br>
+        <label for="">city</label>
+        <input type="text">
+        <label for="">area</label>
+        <input type="text">
+        <label for="">street no. : </label>
+        <input type="text">
+        <br>
+        <br>
+        
+        <label for="">district</label>
+        <input type="text">
+        <label for="">pincode</label>
+        <input type="text">
+        <label for="">state</label>
+        <input type="text">
+        <br>
+        
+    
+        
+    </fieldset>
+    <fieldset>
+        <legend>course preference :</legend>
+
+        <br><br>
+        <label for="" class="font">map your class 12th subject </label> <br>
+        <br>
+        <label for="">subject1  : </label>
+        <input type="text"> <br/><br>
+        <label for="">subject2  : </label>
+        <input type="text"> <br/><br>
+        <label for="">subject3  : </label>
+        <input type="text"> <br/><br>
+        <label for="">subject4  : </label>
+        <input type="text"> <br/><br>
+        <label for="">subject5  : </label>
+        <input type="text"> <br><br>
+        <label for="">subject6  : </label>
+        <input type="text"> <br><br><br>
+
+
+        <label for="" class="font">preference your course : </label><br>
+        <br>
+        <label for="">select course</label>
+        <select name="course" id="">
+            <option value="bms">BMS</option>
+            <option value="bms">BVOC</option>
+            <option value="bms">BCOM</option>
+            <option value="bms">Bsc (hons)</option>
+            <option value="bms">BA (Arts)</option>
+            <option value="bms">BA(Social)</option>
+        </select>
+    </fieldset>
+
+   <div class="btns">
+    <button style="background-color: green;"> submit</button>
+    <button style="background-color: red;"> clear</button>
+    <button style="background-color: orange;"> edit</button>
+   </div>
+
+         
+
+
+
+        </form>
+    </div>
+</body>
+</html>

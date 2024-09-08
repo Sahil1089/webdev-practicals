@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    /* background-image: url("https://img.freepik.com/premium-photo/clock-sky-with-stars-nebula-background-ai_97070-60812.jpg"); */
+    background-size: cover;
+}
+table{
+  width: fit-content;
+    position: relative;
+    top: 10%;
+    left: 7%;
+    background-color: #ffffffe3;
+    margin-bottom: 15px;
+   color: rgb(0, 0, 0);
+   font-size: 1.4vw;
+   font-weight: 400;
+}
+
+table, th, td {
+    border: 2px solid rgba(0, 0, 0, 0.842);
+    border-collapse: collapse;
+  }
+  th,td{
+    padding-left: 15px;
+  }
+  th{
+    width:7.5vw;
+  }
+  tr{
+    width: 8.5vw;
+    height: 11vh;
+  }
+  td{
+    background-color: #f7f6f657;
+  }
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 2%;
+  left: 5.5%;
+  color: #000000;
+  font-weight: 300;
+  font-size: larger;
+ 
+
+}
+
+
+td{
+  transition: all 1.1s;
+  border-radius: 5px;
+  z-index: 2;
+
+}
+td:hover{
+  scale: 1.1;
+  background-color: #1f1e1ecb;
+  color: white;
+  
+}
+.aec{
+  background-color: rgba(0, 128, 0, 0.815);
+  }
+  
+  .ge{
+  background-color: rgba(0, 255, 255, 0.651);
+  }
+  .sec{
+  background-color: rgba(219, 156, 20, 0.76);
+  }
+  
+  .vac{
+  background-color: rgba(235, 201, 10, 0.938);
+  }
+  #lunch{
+    position: relative;
+    background-size:contain;    
+
+
+   }
+  
+   #lunch:hover{
+    scale: 1;
+    animation:Anime 10s linear .2s infinite ;
+   }
+   @keyframes Anime{
+    0%{
+      background-image :url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-aoyCtuGETGexkPDUNY_5KSv8Jhu2OapooA&s");
+    }
+    20%{
+      background-image :url("https://t3.ftcdn.net/jpg/05/60/70/82/360_F_560708240_pMZPOuSfvblWGRoaiZFLT4wiFTzQPwQe.jpg");
+    }
+    40%{
+      background-image :url("https://www.cookwithmanali.com/wp-content/uploads/2024/01/Veg-Chowmein-500x500.jpg");
+    }
+    60%{
+      background-image :url("https://t3.ftcdn.net/jpg/05/60/70/82/360_F_560708240_pMZPOuSfvblWGRoaiZFLT4wiFTzQPwQe.jpg");
+    }
+    80%{
+      background-image :url("https://www.cookwithmanali.com/wp-content/uploads/2024/01/Veg-Chowmein-500x500.jpg");
+    }
+    100%{
+      background-image :url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-aoyCtuGETGexkPDUNY_5KSv8Jhu2OapooA&s");
+    }
+    
+  }
+ 
