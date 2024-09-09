@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: #d8d5d5;
+    /* background-image: url("https://img.freepik.com/premium-photo/clock-sky-with-stars-nebula-background-ai_97070-60812.jpg"); */
+    background-size: cover;
+}
+table{
+  width: fit-content;
+    position: relative;
+    top: 10%;
+    left: 7%;
+    background-color: #dbdadae3;
+    margin-bottom: 15px;
+   color: rgb(0, 0, 0);
+   font-size: 1.4vw;
+   font-weight: 400;
+}
+
+table, th, td {
+    border: 1px solid rgba(150, 150, 150, 0.712);
+    border-collapse: collapse;
+  }
+  th,td{
+    padding-left: 15px;
+  }
+  th{
+    width:7.5vw;
+    background-color:#ebe5ec;
+    box-shadow: inset -8px -8px 10px rgba(70, 70, 70, 0.301), 10px 10px 10px rgba(0, 0,0, .7);
+  }
+  tr{
+    width: 8.5vw;
+    height: 11vh;
+  }
+  td{
+    background-color:#ebe5ec;
+    box-shadow: inset -8px -8px 10px rgba(124, 124, 124, 0.397), 10px 10px 10px rgba(0, 0,0, .7);
+
+  }
+  .head{
+    background-color:#fbe4ff;
+    box-shadow: inset -8px -8px 10px rgba(70, 70, 70, 0.301), 10px 10px 10px rgba(0, 0,0, .7);
+  }
+  
+.heading{
+  display: flex;
+  height:15vh;
+  width: 40vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 2%;
+  left: 32.5%;
+  color: #000000;
+  font-weight: 300;
+  font-size: larger;
+  background-color:#ebe5ec;
+  box-shadow: inset -8px -8px 10px rgba(70, 70, 70, 0.301), 10px 10px 10px rgba(117, 117, 117, 0.705);
+
+ 
+
+}
+
+
+td{
+  transition: all .8s;
+  border-radius: 5px;
+  z-index: 2;
+
+}
+td:hover{
+  scale: 1.04;
+  background-color: #1f1e1e9c;
+  color: white;
+  
+}
+.aec{
+  background-color: rgba(71, 5, 87, 0.801);color: white;
+  }
+  
+  .ge{
+  background-color: rgba(4, 148, 148, 0.836);color: white;
+  }
+  .sec{
+  background-color: rgba(219, 156, 20, 0.76);color: white;
+  }
+  
+  .vac{
+  background-color: rgba(235, 201, 10, 0.938);color: white;
+  }
+  #lunch{
+    position: relative;
+    background-size:contain;    
+    background-color:#0c6460c2;
+    box-shadow: inset -8px -8px 10px rgba(182, 181, 181, 0.356), 10px 10px 10px rgba(0, 0,0, .1);  color: white;
+font-size: 1.2vw;
+padding-right: 4PX;
+
+
+   }
+   .am{
+    background-color: #bb032bea;
+    color: white;
+    font-size: 1vw;
+    box-shadow: inset -8px -8px 10px rgba(51, 51, 51, 0.301), 10px 10px 10px rgba(77, 76, 76, 0.705);
+   }
+   .dsa{
+    background-color: #448d23af;  color: rgb(255, 255, 255);font-size: 1vw;
+    box-shadow: inset -8px -8px 10px rgba(51, 51, 51, 0.301), 10px 10px 10px rgba(77, 76, 76, 0.705);
+
+   }
+  
+   #lunch:hover{
+    scale: 1;
+    animation:Anime 10s linear .2s infinite ;
+   }
+   @keyframes Anime{
+    0%{
+      background-image :url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-aoyCtuGETGexkPDUNY_5KSv8Jhu2OapooA&s");
+    }
+    20%{
+      background-image :url("https://t3.ftcdn.net/jpg/05/60/70/82/360_F_560708240_pMZPOuSfvblWGRoaiZFLT4wiFTzQPwQe.jpg");
+    }
+    40%{
+      background-image :url("https://www.cookwithmanali.com/wp-content/uploads/2024/01/Veg-Chowmein-500x500.jpg");
+    }
+    60%{
+      background-image :url("https://t3.ftcdn.net/jpg/05/60/70/82/360_F_560708240_pMZPOuSfvblWGRoaiZFLT4wiFTzQPwQe.jpg");
+    }
+    80%{
+      background-image :url("https://www.cookwithmanali.com/wp-content/uploads/2024/01/Veg-Chowmein-500x500.jpg");
+    }
+    100%{
+      background-image :url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-aoyCtuGETGexkPDUNY_5KSv8Jhu2OapooA&s");
+    }
+    
+  }
+ 
