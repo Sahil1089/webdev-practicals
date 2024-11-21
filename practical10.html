@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(5, 58, 33);
+            height: 100%;
+            width: 100%;
+        }
+        .container
+    {
+        height: 90vh;
+        width: 70vw;
+        background-color: rgb(238, 93, 20);
+        border-radius: 12px;
+        position: relative;
+        top: 5%;
+        left: 50px;
+        box-shadow: 4px 4px 4px rgba(7, 6, 6, 0.85),-2px -2px 3px white;
+
+    }
+    .textfield{
+        height: 20vh;
+        width: 70vw;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(155, 213, 215);
+        color: white;
+    border-radius: 12px;
+
+    }
+    button{
+        border: none;
+        height: 5vh;
+        width:12vw;
+        border-radius: 10px;
+        background-color: green;
+        box-shadow: 4px 4px 4px rgba(7, 6, 6, 0.85),-2px -2px 3px white;
+    }
+    label{
+        margin: 2vw 2vw;
+        color: rgb(16, 1, 1);
+        font-size: 1.2rem;
+    }
+    .namefield{
+        display: flex;
+flex-direction: column;  
+color: black
+;  }
+    input{
+        height: 5vh;
+        width: 29vw;
+        border-radius: 5px;
+        border: none;
+        margin: 1vw 3vw;
+        box-shadow: 4px 4px 4px rgba(7, 6, 6, 0.85),-2px -2px 3px white;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="textfield">
+            <input type="text" id="textfield" placeholder="enter your name">
+        <button onclick="addname()">click me</button></div>
+
+        <div class="namefield">
+            <label for="first">firstname</label>
+            <input type="text" id="fname">
+            <label for="mname">middleName</label>
+            <input type="text" id="mname">
+            <label for="lname">LastName</label>
+            <input type="text" id="lname">
+
+        </div>
+
+    </div>
+
+    <script>
+        function addname(){
+        let name = document.querySelector("#textfield").value
+        let sname=name.split(" ")
+        let fname=sname[0]
+        let mname=sname[1]
+        let lname=sname[2]
+        
+        if(sname.length===2){
+        document.querySelector("#fname").value=fname
+        document.querySelector("#mname").value=null
+        document.querySelector("#lname").value=mname}
+    else{
+        document.querySelector("#fname").value=fname
+        document.querySelector("#mname").value=mname
+        document.querySelector("#lname").value=lname
+    }}
+    </script>
+</body>
+</html>

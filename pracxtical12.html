@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>birthday countdown</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+        .main{
+            height: 99%;
+            width: 100%;
+            background-color: #0b9ca1d3;
+
+        }
+        .container{
+            height: 100vh;
+            width:100%;
+            position: relative;
+            background-color: rgb(31, 4, 64);
+           
+            
+            
+            background-image: url("https://img.freepik.com/premium-photo/colorful-birthday-party-theme-background-ai-generated_804788-32961.jpg");
+            background-size: cover;
+               
+
+        }
+        .cover{
+            height: 40vh;
+            width: 50%;
+          
+            display: flex;
+            position: relative;
+            top: 15%;
+            left: 30%;
+            gap: 4vw;
+        }
+        .cover .timecont{
+            width: fit-content;
+            display:flex;
+            flex-direction: column;
+            gap: 4vh;
+            color: white;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        
+        
+        label{
+            font-size: 2.9vw;
+            font-weight: 300;
+        }
+       
+        .cover input{
+            height: 8.5vw;
+            width: 8.5vw;
+            background-color: #ffffff67;
+            border-radius: 8px;
+            backdrop-filter: blur(12px);
+            border: none;  
+            color:white;
+            align-items: center;
+            font-size: 6vw;
+            padding-left:20%;
+               
+        }
+        .container .bdtext{
+            font-size: 3.4vw;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 30%;
+            left: 38%;
+            
+            color: rgb(211, 208, 208);
+            
+
+        }
+        .bdmsg{
+            height: 20vh;
+            width: fit-content;
+            background: transparent;
+            color: white;
+            font-size: 2vw;
+            position: absolute;
+            display: flex;
+            justify-content:flex-start;
+            gap:10px;
+            
+            align-items: center;
+            top: 10%;
+            left: 36%;
+            opacity: 0;
+           
+        }
+       .bdmsg img{
+        height: 20vh;
+        width: auto;
+       }
+
+       .visi{
+        opacity: 1;
+       }
+       .container .welmsg{
+        color: white;
+        font-size: 19px;
+        position: relative;
+        left: 20%;
+        top: 10%;
+       }
+       .container .msgdt{
+        color: white;
+       }
+       #ddate,#submit{
+        height: 4vh;
+        border-radius: 10px;
+        width:15vw;
+        font-size: 1rem;
+        font-weight: 200;
+
+background-color: rgb(235, 108, 12); 
+      color: rgb(255, 255, 251);
+        font-size:20px;
+       }
+       #ddate{
+        font-size: 10px;
+        background-color: green;
+       }
+       .reset{
+        background-color: red;
+       }
+  .head{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="head">
+                <label for="" style="color: white; font-size: 1.6rem;">choose your birthday</label>
+            <input type="date" name="enter date of birth" placeholder="enter birthday" id="ddate">
+            <button id="submit" style="width: 120px;" onclick="display()">submit</button>
+            <div class="reset" onclick="reloadPage()" id="submit" style="width: 120px; background-color: red;">RESET</div></div>
+            <div class="welmsg">
+                
+            </div>
+            <div class="bdmsg "
+            style="font-size: 1.6rem; color: rgb(9, 247, 29); text-transform: uppercase;">
+                <img src="https://i.pinimg.com/736x/c0/b3/cf/c0b3cf05df1acfd77ed541a2183f62fe.jpg" alt="">
+            </div>
+            <div class="msgdt"></div>
+            <div class="bdtext" id="enddate" style="font-size: 3rem;">
+                
+
+            </div>
+
+            <div class="cover">
+                <div class="timecont">
+                 <input id="bd" type="text" readonly value = 0>
+                 <label for="">Days</label>
+                </div>
+
+                <div class="timecont">
+                    <input  id="bd"    type="text" readonly value = 0>
+                    <label for="">Hour</label>
+                   </div>
+
+                   <div class="timecont">
+                    <input id="bd" type="text" readonly value = 0>
+                    <label for="">Minute</label>
+                   </div>
+
+                   <div class="timecont">
+                    <input  id="bd"  type="text" readonly value = 0>
+                    <label for="">Second</label>
+                   </div>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+   <script>
+
+var ddate;
+
+
+function reloadPage() {
+    location.reload();
+}
+      function display(){
+     ddate = new Date(document.getElementById("ddate").value);
+     var wel = document.querySelector(".welmsg")
+     
+    var name = prompt("enter your Name")
+    wel.innerHTML=`hey!! ${name} your birhday is coming soon!!!!`;
+
+
+    
+
+   
+
+
+var dddate = document.querySelector(".msgdt").value;
+    const enddate =`${ddate}`;
+    const input = document.querySelectorAll("#bd");
+    const bdmsg =document.querySelector(".container .bdmsg");
+    bdmsg.innerHTML=`<h2>HAPPY BIRTHDAY   ${name}</h2>`
+   
+     const clock =()=>{
+        // given date
+        const end = new Date(enddate);
+        // current date
+        const now = new Date();
+
+        // differnce in second
+        const diff = (end-now)/1000;
+
+        console.log(end,now,diff)
+ 
+       
+        // days counting
+        const days =Math.floor (diff/3600/24);
+        console.log(days,"days");
+        input[0].value = days;
+        // counting hour
+        const hour = Math.floor (diff/3600)%24;
+        input[1].value = hour;
+        // minutes
+        const minutes = Math.floor (diff/60)%60;
+        input[2].value = minutes;
+        // seconds
+        const seconds = Math.floor (diff)%60;
+        input[3].value = seconds;
+        localStorage.setItem("input",JSON.stringify(input))
+
+
+        const x= setInterval(
+        ()=>{
+            clock()
+        },1000
+      );
+
+        if (diff<0){
+            clearInterval(x);
+            input[0].value=0;
+            input[1].value=0;
+
+            input[2].value=0;
+
+            input[3].value=0;
+            bdmsg.classList.add("visi");
+            wel.innerHTML="";
+
+            console.log("happy birthday");
+
+
+
+        }
+
+
+       
+
+
+     }
+      clock();
+
+      const dob = document.getElementById("dob");
+      dob.addEventListener('click',(e)=>{
+        console.log(e);
+
+      })}
+      
+     
+
+
+   </script> 
+</body>
+</html>

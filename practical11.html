@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(249, 245, 248, 0.551);
+            color: white;
+            height: 100%;
+        }
+        .formcontainer{
+            background-color:rgba(237, 252, 252, 0.66);
+            height: 150vh;
+            position: relative;
+            margin-bottom: 45px;
+            padding-bottom: 40px;
+        }
+        .formcontainer h1{
+            border-radius: 12px;
+            margin-left: 10px;
+            position: relative;
+            left: 25%;
+            color: black;
+            text-transform: uppercase;
+
+        }
+        #info{
+            margin-left: 40px;
+            display: flex;
+            background-color: rgb(222, 243, 249);
+            flex-direction: column;
+            width: 80vw;
+            padding-bottom: 40px;
+            left: 5%;
+            margin-bottom: 158px;
+            color: black;
+            box-shadow: 2px 2px 4px black,-2px -2px 4px white;
+            border-radius: 12px;
+            position: absolute;
+
+        }
+        label{
+            font-size: 1.2rem;
+            margin: 2vw 2vw;
+            text-transform: capitalize;
+        }
+        input{
+            height: 5vh;
+        width: 29vw;
+        border-radius: 5px;
+        box-shadow: 2px 2px 6px black,-2px -2px 4px white;
+
+        border: none;
+        margin: 2vw 3vw;
+        }
+        button{
+            box-shadow: 2px 2px 4px black, -2px -2px 4px white;
+background-color: green;
+margin-top: 20px;
+margin-left: 40px;
+height: 6vh;
+border: none;
+border-radius: 12px;
+width: 15vw;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+        <form action="">
+         <div class="formcontainer">
+            <h1>student info</h1>
+            <div id="info" >
+                <label for="firstname">firstname</label>
+                <input type="text" id="fname">
+                <span style="color: red;">*fields can't be empty</span>
+                <label for="lname">last name</label>
+                <input type="text" id="lname">
+                <span style="color: red;">*fields can't be empty</span>
+
+                <label for="rollno">ROLL NO</label>
+                <input type="text" placeholder="enter your roll no" id="roll">
+                <span style="color: red;">*invalid or wrong rollno</span>
+
+                <label for="registration">registration no.</label>
+                <input type="text" id="registration">
+                <span style="color: red;">* registration number does not match</span>
+
+                <label for="mobile">mobile no</label>
+                <input type="text" id="mobile">
+
+                <label for="email">email</label>
+                <input type="email" id="email">
+                <span style="color: red;">* invalid email</span>
+
+                <button id="submit" onclick="validation()">submit</button>
+
+
+            </div>
+
+         </div>
+        </form>
+    <script>
+        let name=document.getElementById("fname","lname").value;
+        let roll = document.getElementById("roll").value
+        let registration = document.getElementById("registration").value
+        let mobile = document.getElementById("mobile").value
+
+        let email = document.getElementById("email").value
+
+
+function validation(){
+
+        if(name==""||roll==""||registration==""||mobile==""||email==""){
+  alert("all fields are mandatory");
+  return false
+
+        }
+        else if(roll>9){
+        alert("please enter full rollno");
+        return false
+
+        }
+
+    }
+
+
+    </script>
+    
+</body>
+</html>
